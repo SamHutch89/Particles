@@ -8,7 +8,7 @@
 /* ----------------------------------------------- */
 
 let gifLength = 180;
-let canvas;
+
 
 function setup(){
 	capturer.start();
