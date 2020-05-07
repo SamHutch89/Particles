@@ -7,13 +7,6 @@
 /* v2.0.0
 /* ----------------------------------------------- */
 
-let gifLength = 180;
-
-
-function setup(){
-	capturer.start();
-}
-
 var pJS = function(tag_id, params){
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
@@ -480,14 +473,7 @@ var pJS = function(tag_id, params){
             radius*2 / p.img.ratio
           );
 		
-			
-		if (frameCount < gifLength){
-				capturer.capture(canvas);
-			} else if (frameCount = gifLength){
-				capturer.stop();
-				capturer.save();
-			}
-			
+						
         }
 
         if(pJS.tmp.img_type == 'svg'){
